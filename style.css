@@ -94,6 +94,11 @@ a {
   justify-content: space-between;
   padding: 15px 30px;
   box-shadow: 0px 5px 10px #ddd;
+  background-color: var(--white); /* Add a background color to the navigation bar */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+h1 {
+  margin: 0;
 }
 .visit {
   font-size: 20px;
@@ -102,3 +107,36 @@ a {
 .visit a {
   color: #333;
 }
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #222831;
+  color: #fff;
+  box-shadow: none;
+}
+
+.dark-mode .nav {
+  background-color: #222831; 
+  color: #fff; 
+}
+
+/* Dark Mode Button Styles */
+.dark-mode-button {
+  background-color: var(--blue); /* Choose a background color */
+  color: var(--white); /* Choose a text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Style the Dark Mode button on hover */
+.dark-mode-button:hover {
+  background-color: var(--light-blue); /* Choose a different background color */
+}
+
+/* Remove box shadow in dark mode */
+.dark-mode .counter-div {
+  box-shadow: none;
+}
+
